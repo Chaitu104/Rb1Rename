@@ -16,9 +16,9 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-Telegram Link : https://t.me/LazyDeveloper 
-Repo Link : https://github.com/LazyDeveloperr/Gangster-Baby-Renamer-BOT
-License Link : https://github.com/LazyDeveloperr/Gangster-Baby-Renamer-BOT/blob/main/LICENSE
+Telegram Link : https://t.me/rb1bots
+Repo Link : https://github.com/sarthakkale16/Rb1Rename
+License Link : https://github.com/sarthakkale16/Rb1Rename/blob/main/LICENSE
 """
 
 from asyncio import sleep
@@ -36,25 +36,25 @@ from config import START_PIC, FLOOD, ADMIN
 async def start(client, message):
     user = message.from_user
     if not await db.is_user_exist(user.id):
-        await db.add_user(user.id)             
-    txt=f"👋 Hello Developer {user.mention} \n\nI am an Advance file Renamer and file Converter BOT with permanent and custom thumbnail support.\n\nSend me any video or document !"
+        await db.add_user(user.id)           
+    txt=f"★ ʜᴇʏ {user.mention}  \n\n sᴇɴᴅ ᴍᴇ ғɪʟᴇ ᴏʀ ᴠɪᴅᴇᴏ ᴛᴏ ʀᴇɴᴀᴍᴇ ! \n𝙋𝙤𝙬𝙚𝙧𝙚𝙙 𝘽𝙮 @rb1bots"
     button=InlineKeyboardMarkup([[
-        InlineKeyboardButton("😈 Developer 😈", callback_data='dev')
+        InlineKeyboardButton("★ ᴅᴇᴠᴇʟᴏᴘᴇʀ ★", callback_data='dev')
         ],[
-        InlineKeyboardButton('📢 Updates', url='https://t.me/LazyDeveloper'),
-        InlineKeyboardButton('🤝 Support', url='https://t.me/LazyPrincessSupport')
+        InlineKeyboardButton('✘ ᴜᴘᴅᴀᴛᴇs ✘', url='https://t.me/rb1bots'),
+        InlineKeyboardButton('✘ sᴜᴘᴘᴏʀᴛ ✘', url='https://t.me/requestbox1')
         ],[
-        InlineKeyboardButton('⚡️ About', callback_data='about'),
-        InlineKeyboardButton('🤕 Help', callback_data='help')
+        InlineKeyboardButton('✘ ᴀʙᴏᴜᴛ ✘', callback_data='about'),
+        InlineKeyboardButton('✘ ʜᴇʟᴘ ✘', callback_data='help')
         ],[
-        InlineKeyboardButton("🙋🏻 How to make this BOT ? ", url='https://www.youtube.com/channel/UCY-iDra0x2hdd9PdHKcZkRw')
+        InlineKeyboardButton("✘ ᴍᴏᴠɪᴇs ᴜᴘᴅᴀᴛᴇs ✘", url='https://t.me/requestbox1official')
         ],[
-        InlineKeyboardButton("🎬 Join Our Movie Channel !", url='https://t.me/+WwDm2ByFlz80YTY9')
+        InlineKeyboardButton("✘ ᴏᴜʀ ᴍᴏᴠɪᴇ ʙᴏᴛ ✘", url='https://t.me/rb1filter3_bot')
         ],[
-        InlineKeyboardButton("❤️ Subscribe YT ❤️", url='https://www.youtube.com/channel/UCY-iDra0x2hdd9PdHKcZkRw')
+        InlineKeyboardButton("ɢɪᴛʜᴜʙ ғᴏʀᴋs", url='https://github.com/sarthakkale16')
         ],[
-        InlineKeyboardButton("📝Admin-TG", url='https://t.me/mRiderDM'),
-        InlineKeyboardButton("📝Admin-Insta", url='https://instagram.com/LazyDeveloperrr')
+        InlineKeyboardButton("ᴍᴏᴠɪᴇs ᴀᴠᴀɪʟᴀʙʟᴇ ?", url='https://t.me/rb1index'),
+        InlineKeyboardButton("★ ʙᴜʏ ᴘʀᴇᴍɪᴜᴍ ★", url='https://t.me/rb1official')
         ]
         ])
     if START_PIC:
@@ -96,24 +96,24 @@ async def cb_handler(client, query: CallbackQuery):
     data = query.data 
     if data == "start":
         await query.message.edit_text(
-            text=f"""👋 Hello Developer {query.from_user.mention} \n\nI am an Advance file Renamer and file Converter BOT with permanent and custom thumbnail support.\n\nSend me any video or document !""",
+            text=f"""★ ʜᴇʏ {query.from_user.mention} \n\n sᴇɴᴅ ᴍᴇ ғɪʟᴇ ᴏʀ ᴠɪᴅᴇᴏ ᴛᴏ ʀᴇɴᴀᴍᴇ ! \n𝙋𝙤𝙬𝙚𝙧𝙚𝙙 𝘽𝙮 @rb1bots !""",
             reply_markup=InlineKeyboardMarkup( [[
-        InlineKeyboardButton("😈 Developer 😈", callback_data='dev')
+        InlineKeyboardButton("ᴅᴇᴠᴇʟᴏᴘᴇʀ", callback_data='dev')
         ],[
-        InlineKeyboardButton('📢 Updates', url='https://t.me/LazyDeveloper'),
-        InlineKeyboardButton('🤝 Support', url='https://t.me/LazyPrincessSupport')
+        InlineKeyboardButton('✘ ᴜᴘᴅᴀᴛᴇs ✘', url='https://t.me/rb1bots'),
+        InlineKeyboardButton('✘ sᴜᴘᴘᴏʀᴛ ✘', url='https://t.me/requestbox1')
         ],[
-        InlineKeyboardButton('⚡️ About', callback_data='about'),
-        InlineKeyboardButton('🤕 Help', callback_data='help')
+        InlineKeyboardButton('✘ ᴀʙᴏᴜᴛ ✘', callback_data='about'),
+        InlineKeyboardButton('✘ ʜᴇʟᴘ ✘', callback_data='help')
         ],[
-        InlineKeyboardButton("🙋🏻 How to make this BOT ? ", url='https://www.youtube.com/channel/UCY-iDra0x2hdd9PdHKcZkRw')
+        InlineKeyboardButton("✘ ᴍᴏᴠɪᴇs ᴜᴘᴅᴀᴛᴇs ✘", url='https://t.me/requestbox1official')
         ],[
-        InlineKeyboardButton("🎬 Join Our Movie Channel !", url='https://t.me/+WwDm2ByFlz80YTY9')
+        InlineKeyboardButton("✘ ᴏᴜʀ ᴍᴏᴠɪᴇ ʙᴏᴛ ✘", url='https://t.me/rb1filter3_bot')
         ],[
-        InlineKeyboardButton("❤️ Subscribe YT ❤️", url='https://www.youtube.com/channel/UCY-iDra0x2hdd9PdHKcZkRw')
+        InlineKeyboardButton("✘ ɢɪᴛʜᴜʙ ғᴏʀᴋs ✘", url='https://www.github.com/sarthakxd16')
         ],[
-        InlineKeyboardButton("📝Admin-TG", url='https://t.me/mRiderDM'),
-        InlineKeyboardButton("📝Admin-Insta", url='https://instagram.com/LazyDeveloperrr')
+        InlineKeyboardButton("✘ ғɪʟᴇs ᴀᴠᴀɪʟᴀʙʟᴇ ✘", url='https://t.me/rb1index'),
+        InlineKeyboardButton("✘ ʙᴜʏ ᴘʀᴇᴍɪᴜᴍ ✘", url='https://t.me/rb1official')
         ]
         ]
                 )
@@ -122,15 +122,15 @@ async def cb_handler(client, query: CallbackQuery):
         await query.message.edit_text(
             text=mr.HELP_TXT,
             reply_markup=InlineKeyboardMarkup( [[
-               #⚠️ don't change source code & source link ⚠️ #
-               InlineKeyboardButton("❣️ Contact Admin ❣️", url="https://www.instagram.com/LazyDeveloperrr")
+               #⚠️ Do Not change source code & source link ⚠️ #
+               InlineKeyboardButton("★ ᴅᴇᴠᴇʟᴏᴘᴇʀ ★", url="https://t.me/know_sarthak16")
                ],[
-               InlineKeyboardButton("❤️‍🔥 How to use me ? ❤️‍🔥", url='https://www.youtube.com/channel/UCY-iDra0x2hdd9PdHKcZkRw')
+               InlineKeyboardButton("☆ ʙᴜʏ ᴘʀᴇᴍɪᴜᴍ ☆", url='https://t.me/rb1official')
                ],[
-               InlineKeyboardButton("🎬 Join our Movie Channel 🎬", url="https://t.me/+WwDm2ByFlz80YTY9")
+               InlineKeyboardButton("☆ ʙᴏᴛ ᴜᴘᴅᴀᴛᴇs ☆", url="https://t.me/rb1bot")
                ],[
-               InlineKeyboardButton("🔒 𝙲𝙻𝙾𝚂𝙴", callback_data = "close"),
-               InlineKeyboardButton("◀️ 𝙱𝙰𝙲𝙺", callback_data = "start")
+               InlineKeyboardButton("★ ᴄʟᴏsᴇ ★", callback_data = "close"),
+               InlineKeyboardButton("★ ʜᴏᴍᴇ ★", callback_data = "start")
                ]]
             )
         )
@@ -140,14 +140,14 @@ async def cb_handler(client, query: CallbackQuery):
             disable_web_page_preview = True,
             reply_markup=InlineKeyboardMarkup( [[
                #⚠️ don't change source code & source link ⚠️ #
-               InlineKeyboardButton("❣️ Developer ❣️", url="https://www.instagram.com/LazyDeveloperrr")
+               InlineKeyboardButton("✘ ᴅᴇᴠᴇʟᴏᴘᴇʀ ✘", url="https://t.me/know_sarthak16")
                ],[
-               InlineKeyboardButton("❤️‍🔥 How to make me ? ❤️‍🔥", url='https://www.youtube.com/channel/UCY-iDra0x2hdd9PdHKcZkRw')
+               InlineKeyboardButton("☆ ʙᴜʏ ᴘʀᴇᴍɪᴜᴍ ☆", url='https://t.me/rb1official')
                ],[
-                InlineKeyboardButton("🎬 Join our Movie Channel 🎬", url="https://t.me/+WwDm2ByFlz80YTY9")
+                InlineKeyboardButton("☆ ʙᴏᴛ ᴜᴘᴅᴀᴛᴇs ☆", url="https://t.me/rb1bots")
                ],[
-               InlineKeyboardButton("🔒 𝙲𝙻𝙾𝚂𝙴", callback_data = "close"),
-               InlineKeyboardButton("◀️ 𝙱𝙰𝙲𝙺", callback_data = "start")
+               InlineKeyboardButton("★ ᴄʟᴏsᴇ ★", callback_data = "close"),
+               InlineKeyboardButton("★ ʜᴏᴍᴇ ★", callback_data = "start")
                ]]
             )
         )
@@ -156,14 +156,14 @@ async def cb_handler(client, query: CallbackQuery):
             text=mr.DEV_TXT,
             reply_markup=InlineKeyboardMarkup( [[
                #⚠️ don't change source code & source link ⚠️ #
-               InlineKeyboardButton("❣️ Developer ❣️", url="https://www.instagram.com/LazyDeveloperrr")
+               InlineKeyboardButton("✘ ᴅᴇᴠᴇʟᴏᴘᴇʀ ✘", url="https://t.me/know_sarthak16")
                ],[
-               InlineKeyboardButton("❤️‍🔥 How to make me ? ❤️‍🔥", url='https://www.youtube.com/channel/UCY-iDra0x2hdd9PdHKcZkRw')
+               InlineKeyboardButton("☆ ʙᴜʏ ᴘʀᴇᴍɪᴜᴍ ☆", url='https://t.me/rb1official')
                ],[
-                InlineKeyboardButton("🎬 Join our Movie Channel 🎬", url="https://t.me/+WwDm2ByFlz80YTY9")
+                InlineKeyboardButton("☆ ᴍᴏᴠɪᴇs ᴜᴘᴅᴀᴛᴇs ☆", url="https://t.me/requestbox1official")
                ],[
-               InlineKeyboardButton("🔒 𝙲𝙻𝙾𝚂𝙴", callback_data = "close"),
-               InlineKeyboardButton("◀️ 𝙱𝙰𝙲𝙺", callback_data = "start")
+               InlineKeyboardButton("★ ᴄʟᴏsᴇ ★", callback_data = "close"),
+               InlineKeyboardButton("★ ʜᴏᴍᴇ ★", callback_data = "start")
                ]]
             )
         )
